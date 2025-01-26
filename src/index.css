@@ -1,0 +1,161 @@
+
+
+Global Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* Bot Cards */
+.bot-collection,
+.bot-army {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.bot-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.bot-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.bot-card img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.bot-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.bot-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+/* Button Styles */
+button {
+  background-color: #ff5252;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 0.5rem;
+}
+
+button:hover {
+  background-color: #e02f2f;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* YourBotArmy Styles */
+.bot-army .bot-card {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+}
+
+.bot-army button {
+  background-color: #4caf50;
+}
+
+.bot-army button:hover {
+  background-color: #388e3c;
+}
+
+/* Additional styles for BotSpecs (if you implement it) */
+.bot-specs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.bot-specs img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.bot-specs h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.bot-specs p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.bot-specs button {
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.bot-specs button:hover {
+  background-color: #388e3c;
+}
