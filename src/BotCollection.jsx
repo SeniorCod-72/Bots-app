@@ -1,10 +1,25 @@
-
+// src/components/BotCollection.js
 import React, { useState, useEffect } from 'react';
 import BotCard from './BotCard';
+import SortBar from './ SortBar';
 
 const BotCollection = () => {
   const [bots, setBots] = useState([]);
   const [botArmy, setBotArmy] = useState([]);
+  const [sortCriteria, setSortCriteria] = useState('health'); // Default sort criteria
+
+
+      // Handle sorting change
+  const handleSortChange = (criteria) => {
+    setSortCriteria(criteria);
+  };
+
+  // Sort the bots based on the selected criteria
+  const sortedBots = bots.sort((a, b) => {
+    if (a[sortCriteria] < b[sortCriteria]) return -1;
+    if (a[sortCriteria] > b[sortCriteria]) return 1;
+    return 0;
+  });
 
   // Fetch bots from the JSON server
   useEffect(() => {
@@ -12,6 +27,8 @@ const BotCollection = () => {
       .then((response) => response.json())
       .then((data) => setBots(data));
   }, []);
+
+
 
   // Enlist a bot into the army
   const handleEnlist = (bot) => {
@@ -41,29 +58,33 @@ const BotCollection = () => {
   };
 
   return (
-    <div>
-      <h2>Bot Collection</h2>
-      <div className="bot-collection">
-        {bots.map((bot) => (
-          <BotCard key={bot.id} bot={bot} onEnlist={handleEnlist} />
-        ))}
-      </div>
+    <div className="container">
+      {/* Sort Bar should be at the top */}
+      <SortBar onSortChange={handleSortChange} />
 
-      <h2>Your Bot Army</h2>
-      <div className="bot-army">
-        {botArmy.map((bot) => (
-          <div key={bot.id} className="bot-card">
-            <img src={bot.avatar_url} alt={bot.name} />
-            <h3>{bot.name}</h3>
-            <p>{bot.bot_class}</p>
-            <button onClick={() => handleRelease(bot)}>Release</button>
-            <button onClick={() => handleDischarge(bot)}>Discharge</button>
-          </div>
-        ))}
+      <div className="content">
+        <h2>Bot Collection</h2>
+        <div className="bot-collection">
+          {sortedBots.map((bot) => (
+            <BotCard key={bot.id} bot={bot} onEnlist={handleEnlist} />
+          ))}
+        </div>
+
+        <h2>Your Bot Army</h2>
+        <div className="bot-army">
+          {botArmy.map((bot) => (
+            <div key={bot.id} className="bot-card">
+              <img src={bot.avatar_url} alt={bot.name} />
+              <h3>{bot.name}</h3>
+              <p>{bot.bot_class}</p>
+              <button onClick={() => handleRelease(bot)}>Release</button>
+              <button onClick={() => handleDischarge(bot)}>Discharge</button>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
 };
 
 export default BotCollection;
-

@@ -159,3 +159,104 @@ button:disabled {
 .bot-specs button:hover {
   background-color: #388e3c;
 }
+/* src/styles/App.css */
+
+/* src/styles/App.css */
+
+/* Ensure full-width container and padding */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 20px; /* Add some padding at the top of the page */
+  }
+  
+  /* Container to manage overall page layout */
+  .container {
+    width: 100%;
+    max-width: 1200px; /* Optional: limit the max width of the container */
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* SortBar Styling - Positioned at the top */
+  .sort-bar {
+    margin: 0 auto 1rem auto;  /* Centered with margin at the bottom */
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Optional: limit the width */
+  }
+  
+  .sort-bar label {
+    font-size: 1rem;
+    color: #333;
+    margin-right: 10px;
+  }
+  
+  .sort-bar select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  .sort-bar select:focus {
+    outline: none;
+    border-color: #ff6347;
+  }
+  
+  /* Content Styling */
+  .content {
+    margin-top: 20px;
+  }
+  
+  /* Bot Collection Layout */
+  .bot-collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .bot-card {
+    background-color: #f8f8f8;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bot-card img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .bot-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .bot-card button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Your Bot Army Section */
+  .bot-army {
+    margin-top: 20px;
+  }
+  
+  .bot-army .bot-card {
+    background-color: #e0e0e0;
+  }
+  

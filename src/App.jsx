@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import BotCollection from './BotCollection';
 import YourBotArmy from './YourBotArmy';
+import SortBar from './ SortBar';
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
       <h1>Bot Battlr</h1>
       <BotCollection bots={bots} enlistBot={enlistBot} />
       <YourBotArmy army={army} dischargeBot={dischargeBot} deleteBot={deleteBot} />
+      <SortBar/>
     </div>
   );
 }
