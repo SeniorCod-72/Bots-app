@@ -114,7 +114,7 @@ button:disabled {
   background-color: #388e3c;
 }
 
-/* Additional styles for BotSpecs (if you implement it) */
+
 .bot-specs {
   display: flex;
   flex-direction: column;
@@ -159,9 +159,7 @@ button:disabled {
 .bot-specs button:hover {
   background-color: #388e3c;
 }
-/* src/styles/App.css */
 
-/* src/styles/App.css */
 
 /* Ensure full-width container and padding */
 body {
@@ -186,7 +184,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px; /* Optional: limit the width */
+    max-width: 400px;
   }
   
   .sort-bar label {
@@ -259,4 +257,9 @@ body {
   .bot-army .bot-card {
     background-color: #e0e0e0;
   }
+
+.sort-bar select {
+    margin-left: 10px; 
+  }
+
   
