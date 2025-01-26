@@ -10,7 +10,7 @@ const BotCollection = () => {
 
   // Fetch bots from the JSON server
   useEffect(() => {
-    fetch('http://localhost:3000/bots')  // Keeping your original fetch URL
+    fetch('https://bots-si0g.onrender.com/bots')  // Keeping your original fetch URL
       .then((response) => response.json())
       .then((data) => setBots(data));
   }, []);
@@ -58,7 +58,7 @@ const BotCollection = () => {
     setBotArmy(botArmy.filter((b) => b.id !== bot.id));
 
     // Delete bot from the server
-    fetch(`http://localhost:3000/bots/${bot.id}`, {
+    fetch(`https://bots-si0g.onrender.com/bots/${bot.id}`, {
       method: 'DELETE',
     }).then(() => {
       alert(`${bot.name} has been discharged from service.`);
