@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import BotCollection from './BotCollection';
 import YourBotArmy from './YourBotArmy';
 import SortBar from './ SortBar';
+import Header from './header';
 
 
 function App() {
@@ -36,10 +37,12 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Bot Battlr</h1>
+      <h1>Bots app</h1>
+      <Header/>
       <BotCollection bots={bots} enlistBot={enlistBot} />
       <YourBotArmy army={army} dischargeBot={dischargeBot} deleteBot={deleteBot} />
       <SortBar/>
+      
     </div>
   );
 }

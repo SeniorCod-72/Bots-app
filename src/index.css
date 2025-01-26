@@ -1,265 +1,165 @@
 
 
-Global Styles
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-h1 {
-  font-size: 3rem;
-  color: #333;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-h2 {
-  font-size: 2rem;
-  color: #555;
-  margin-bottom: 1.5rem;
-}
-
-/* Bot Cards */
-.bot-collection,
-.bot-army {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 2rem;
-}
-
-.bot-card {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 200px;
-  text-align: center;
-  padding: 1rem;
-  transition: transform 0.2s, box-shadow 0.2s;
-  cursor: pointer;
-}
-
-.bot-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.bot-card img {
-  width: 100%;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
-
-.bot-card h3 {
-  font-size: 1.2rem;
-  color: #333;
-}
-
-.bot-card p {
-  font-size: 0.9rem;
-  color: #666;
-  margin-bottom: 1rem;
-}
-
-/* Button Styles */
-button {
-  background-color: #ff5252;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  margin-top: 0.5rem;
-}
-
-button:hover {
-  background-color: #e02f2f;
-}
-
-button:focus {
-  outline: none;
-}
-
-button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
-
-/* YourBotArmy Styles */
-.bot-army .bot-card {
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
-}
-
-.bot-army button {
-  background-color: #4caf50;
-}
-
-.bot-army button:hover {
-  background-color: #388e3c;
-}
-
-
-.bot-specs {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  text-align: center;
-}
-
-.bot-specs img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
-
-.bot-specs h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.bot-specs p {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 1rem;
-}
-
-.bot-specs button {
-  background-color: #4caf50;
-  color: #fff;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  margin-top: 0.5rem;
-  cursor: pointer;
-}
-
-.bot-specs button:hover {
-  background-color: #388e3c;
-}
-
-
-/* Ensure full-width container and padding */
-body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
-    font-family: Arial, sans-serif;
-    padding-top: 20px; /* Add some padding at the top of the page */
-  }
-  
-  /* Container to manage overall page layout */
-  .container {
-    width: 100%;
-    max-width: 1200px; /* Optional: limit the max width of the container */
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  /* SortBar Styling - Positioned at the top */
-  .sort-bar {
-    margin: 0 auto 1rem auto;  /* Centered with margin at the bottom */
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  .sort-bar label {
-    font-size: 1rem;
+    padding: 0;
+    background-color: #f4f4f9;
     color: #333;
-    margin-right: 10px;
   }
   
-  .sort-bar select {
-    padding: 0.5rem;
-    font-size: 1rem;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-    cursor: pointer;
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
   }
   
-  .sort-bar select:focus {
-    outline: none;
-    border-color: #ff6347;
+  h2 {
+    font-size: 1.8em;
+    color: #4e4e4e;
+    margin-bottom: 20px;
   }
   
-  /* Content Styling */
-  .content {
-    margin-top: 20px;
-  }
-  
-  /* Bot Collection Layout */
-  .bot-collection {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 20px;
-  }
-  
-  .bot-card {
-    background-color: #f8f8f8;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 8px;
-    width: 200px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .bot-card img {
-    max-width: 100%;
-    border-radius: 8px;
-  }
-  
-  .bot-card button {
+  button {
+    padding: 10px 20px;
+    border: none;
     background-color: #007bff;
     color: white;
-    border: none;
-    padding: 8px;
-    border-radius: 4px;
     cursor: pointer;
-    margin-top: 10px;
+    font-size: 1em;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
   }
   
-  .bot-card button:hover {
+  button:hover {
     background-color: #0056b3;
   }
   
-  /* Your Bot Army Section */
+  button:focus {
+    outline: none;
+  }
+  
+  h3 {
+    font-size: 1.3em;
+    color: #2c3e50;
+    margin-top: 10px;
+  }
+  
+  p {
+    font-size: 1em;
+    color: #7f8c8d;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Bot Card */
+  .bot-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .bot-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Bot Army */
   .bot-army {
-    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
   
   .bot-army .bot-card {
-    background-color: #e0e0e0;
+    margin: 10px;
+    width: 220px;
   }
-
-.sort-bar select {
-    margin-left: 10px; 
+  
+  /* Sort Bar */
+  .sort-bar {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-
+  
+  .sort-bar select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+  }
+  
+  .sort-bar label {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  
+  /* Bot Collection */
+  .bot-collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  /* Media Queries (Responsive) */
+  @media (max-width: 768px) {
+    .bot-card {
+      width: 200px;
+      margin: 15px;
+    }
+  
+    .sort-bar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .bot-army {
+      flex-direction: column;
+    }
+  
+    .bot-collection {
+      justify-content: center;
+    }
+  
+    button {
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 10px;
+    }
+  
+    h2 {
+      font-size: 1.5em;
+    }
+  
+    .bot-card {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    button {
+      padding: 6px 12px;
+      font-size: 0.9em;
+    }
+  }
   
