@@ -23,11 +23,12 @@
   }
     
   .bot-card {
-    background-color: hsla(0, 1%, 48%, 0.753);
-    width: 230px;
+    background-color: hsla(0, 3%, 23%, 0.753);
+    width: 250px;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 2px 5px rgba(201, 94, 94, 0.1);
+    color: #ddd;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
