@@ -6,25 +6,59 @@
   
   body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+    background-color: rgb(0, 0, 0);
+    color:black;
     line-height: 1.6;
+    width: auto;
+    height: auto;
+    
   }
+   /* Bot Collection */
+   .bot-collection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    
+  }
+    
+  .bot-card {
+    background-color: hsla(0, 1%, 48%, 0.753);
+    width: 230px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(201, 94, 94, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+    /* Sort Bar */
+    .sort-bar {
+        background-color: white;
+        padding: 10px 20px;
+        border-radius: 10px;
+        color: black;
+        box-shadow: 0px 4px 6px rgba(11, 211, 11, 0.1);
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
   
   .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
   }
   
   h2, h3, h4 {
     font-family: 'Arial', sans-serif;
-    color: #4e4e4e;
+    color: #fff;
     margin-bottom: 10px;
+    font-style: italic;
   }
   
   h2 {
-    font-size: 2rem;
+    font-size: 2em;
   }
   
   h3 {
@@ -38,17 +72,17 @@
   /* Button Styles */
   button {
     padding: 10px 20px;
-    border: none;
-    background-color: #007bff;
-    color: white;
+    border: rgb(70, 180, 19) solid 2px;
+    background-color: #fff;
+    color: black;
     cursor: pointer;
     font-size: 1em;
-    border-radius: 5px;
+    border-radius: 20px;
     transition: background-color 0.3s ease, transform 0.2s ease;
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: #39df5d;
     transform: scale(1.05);
   }
   
@@ -56,21 +90,12 @@
     outline: none;
   }
   
-  /* Sort Bar */
-  .sort-bar {
-    background-color: white;
-    padding: 10px 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+
   
   .sort-bar label {
     font-weight: bold;
     font-size: 1.1rem;
+    
   }
   
   .sort-bar select {
@@ -78,44 +103,25 @@
     font-size: 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
-    background-color: #f9f9f9;
+    background-color: hsl(0, 0%, 98%);
     cursor: pointer;
   }
-  
-  /* Bot Collection */
-  .bot-collection {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: flex-start;
-  }
-  
-  .bot-card {
-    background-color: white;
-    width: 230px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .bot-card:hover {
+  /* .bot-card:hover {
     transform: translateY(-5px);
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
-  }
+  } */
   
   .bot-card img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 100px;
     object-fit: cover;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   
   .bot-card .bot-name {
     font-size: 1.2rem;
-    color: #2c3e50;
+    color: #455d75;
     margin-bottom: 10px;
   }
   
@@ -123,11 +129,13 @@
     font-size: 1rem;
     color: #7f8c8d;
     margin-bottom: 10px;
+    
   }
   
   .bot-card button {
     padding: 8px 15px;
     font-size: 0.9rem;
+    
   }
   
   /* Bot Army */
@@ -146,6 +154,7 @@
   .bot-army h2 {
     font-size: 1.8rem;
     margin-bottom: 20px;
+    
   }
   
   .bot-army button {
@@ -176,7 +185,7 @@
     margin-right: 10px;
   }
   
-  /* Responsive Design */
+ 
   @media (max-width: 768px) {
     .container {
       padding: 15px;
@@ -189,6 +198,7 @@
     .bot-card {
       width: 200px;
       padding: 15px;
+      
     }
   
     .bot-army .bot-card {
