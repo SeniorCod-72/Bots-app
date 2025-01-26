@@ -58,7 +58,7 @@ const BotCollection = () => {
     setBotArmy(botArmy.filter((b) => b.id !== bot.id));
 
     // Delete bot from the server
-    fetch(`https://bots-si0g.onrender.com/bots${bot.id}`, {
+    fetch(`https://bots-si0g.onrender.com/bots/${bot.id}`, {
       method: 'DELETE',
     }).then(() => {
       alert(`${bot.name} has been discharged from service.`);

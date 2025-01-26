@@ -26,7 +26,7 @@ function App() {
   };
 
   const deleteBot = (id) => {
-    fetch(`https://bots-si0g.onrender.com/bots${id}`, {
+    fetch(`https://bots-si0g.onrender.com/bots/${id}`, {
       method: 'DELETE',
     })
       .then(() => {
