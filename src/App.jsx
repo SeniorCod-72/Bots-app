@@ -10,7 +10,7 @@ function App() {
   const [army, setArmy] = useState([]);
 
   useEffect(() => {
-    fetch('https://bots-si0g.onrender.com/bots')
+    fetch('http://localhost:3000/bots')
       .then(response => response.json())
       .then(data => setBots(data));
   }, []);
@@ -26,7 +26,7 @@ function App() {
   };
 
   const deleteBot = (id) => {
-    fetch(`https://bots-si0g.onrender.com/bots/${id}`, {
+    fetch(`http://localhost:3000/bots${id}`, {
       method: 'DELETE',
     })
       .then(() => {
